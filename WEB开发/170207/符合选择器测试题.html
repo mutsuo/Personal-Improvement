@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>复合选择器测试题</title>
+</head>
+<style type="text/css">
+	a{
+		color:#f00;
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+	a:active{
+		color:orange;
+	}
+	.nav{
+		color:#0f0;
+	}
+	.nav,.sitenav{
+		font-size:16px;
+		font-family: "微软雅黑"
+	}
+	.nav > div{
+		font-weight: bold;
+	}
+</style>
+<body>
+	<div class="nav">	<!-- 导航栏 -->
+		<ul>
+			<li>公司首页</li>
+			<li>公司简介</li>
+			<li>公司产品</li>
+			<li>联系我们</li>
+		</ul>
+		<div>收藏本站</div>
+	</div>
+	<div class="sitenav">	<!-- 侧导航栏 -->
+		<div class="site-1">左导航栏</div>
+		<div class="site-2"><a href="#">登录</a></div>
+	</div>
+</body>
+</html>
